@@ -7,7 +7,7 @@
     <link rel="icon" href="./fab icon.png" type="image/x-icon">
     <title>Contact – Abrorad EduCare</title>
     <meta name="robots" content="max-image-preview:large">
- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="https://kit.fontawesome.com/b055084325.js" crossorigin="anonymous"></script>
     <script src="https://templatekit.jegtheme.com/travisa/wp-includes/js/wp-emoji-release.min.js?ver=5.9.3"
         type="text/javascript" defer=""></script>
@@ -2508,12 +2508,13 @@
                                                                     data-wp-nonce="95061a8e52"
                                                                     data-form-nonce="61f731f72d"
                                                                     data-stop-vertical-effect="">
-                                                                    <form class="metform-form-content">
+                                                                    <form class="metform-form-content" method="POST" name="Contact Us" id="Contact Us" data-email="naveenjaiswal6422@gmail.com"
+                                                                    action="">
                                                                         <div class="mf-main-response-wrap   mf-response-msg-wrap"
                                                                             data-show="0">
                                                                             <div class="mf-response-msg"></div>
                                                                         </div>
-                                                                        <div class="metform-form-main-wrapper">
+                                                                        <div class="form-elements metform-form-main-wrapper">
                                                                             <div data-elementor-type="wp-post"
                                                                                 data-elementor-id="797"
                                                                                 class="elementor elementor-797">
@@ -2585,8 +2586,8 @@
                                                                                                                 <div class="elementor-element elementor-element-19318f7 elementor-widget elementor-widget-mf-text"
                                                                                                                     data-id="19318f7"
                                                                                                                     data-element_type="widget"
-                                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;mf-text&quot;}"
-                                                                                                                    data-widget_type="mf-text.default">
+                                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;name&quot;}"
+                                                                                                                    data-widget_type="name.default">
                                                                                                                     <div
                                                                                                                         class="elementor-widget-container">
                                                                                                                         <div
@@ -2595,7 +2596,8 @@
                                                                                                                                 type="text"
                                                                                                                                 class="mf-input "
                                                                                                                                 id="mf-input-text-19318f7"
-                                                                                                                                name="mf-text"
+                                                                                                                                name="name"
+                                                                                                                                required
                                                                                                                                 placeholder="Your Name "
                                                                                                                                 aria-invalid="false">
                                                                                                                         </div>
@@ -2611,8 +2613,8 @@
                                                                                                                 <div class="elementor-element elementor-element-31580be elementor-widget elementor-widget-mf-text"
                                                                                                                     data-id="31580be"
                                                                                                                     data-element_type="widget"
-                                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;mf-text&quot;}"
-                                                                                                                    data-widget_type="mf-text.default">
+                                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;Subject&quot;}"
+                                                                                                                    data-widget_type="Subject.default">
                                                                                                                     <div
                                                                                                                         class="elementor-widget-container">
                                                                                                                         <div
@@ -2621,7 +2623,8 @@
                                                                                                                                 type="text"
                                                                                                                                 class="mf-input "
                                                                                                                                 id="mf-input-text-31580be"
-                                                                                                                                name="mf-text"
+                                                                                                                                name="Subject"
+                                                                                                                                required
                                                                                                                                 placeholder="Subject "
                                                                                                                                 aria-invalid="false">
                                                                                                                         </div>
@@ -2645,8 +2648,8 @@
                                                                                                                 <div class="elementor-element elementor-element-e511811 elementor-widget elementor-widget-mf-email"
                                                                                                                     data-id="e511811"
                                                                                                                     data-element_type="widget"
-                                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;mf-email&quot;}"
-                                                                                                                    data-widget_type="mf-email.default">
+                                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;email&quot;}"
+                                                                                                                    data-widget_type="email.default">
                                                                                                                     <div
                                                                                                                         class="elementor-widget-container">
                                                                                                                         <div
@@ -2655,7 +2658,8 @@
                                                                                                                                 type="email"
                                                                                                                                 class="mf-input "
                                                                                                                                 id="mf-input-email-e511811"
-                                                                                                                                name="mf-email"
+                                                                                                                                name="email"
+                                                                                                                                required
                                                                                                                                 placeholder="Your Email "
                                                                                                                                 aria-invalid="false"
                                                                                                                                 value="">
@@ -2672,8 +2676,8 @@
                                                                                                                 <div class="elementor-element elementor-element-275e6b7 elementor-widget elementor-widget-mf-telephone"
                                                                                                                     data-id="275e6b7"
                                                                                                                     data-element_type="widget"
-                                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;mf-telephone&quot;}"
-                                                                                                                    data-widget_type="mf-telephone.default">
+                                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;Phone no&quot;}"
+                                                                                                                    data-widget_type="Phone no.default">
                                                                                                                     <div
                                                                                                                         class="elementor-widget-container">
                                                                                                                         <div
@@ -2682,8 +2686,10 @@
                                                                                                                                 type="tel"
                                                                                                                                 class="mf-input "
                                                                                                                                 id="mf-input-telephone-275e6b7"
-                                                                                                                                name="mf-telephone"
-                                                                                                                                placeholder="Your Phone "
+                                                                                                                                name="Phone no"
+                                                                                                                                required
+                                                                                                                               
+                                                                                                                                placeholder="Your Phone"
                                                                                                                                 aria-invalid="false">
                                                                                                                         </div>
                                                                                                                     </div>
@@ -2695,8 +2701,8 @@
                                                                                                 <div class="elementor-element elementor-element-1564c29 elementor-widget elementor-widget-mf-textarea"
                                                                                                     data-id="1564c29"
                                                                                                     data-element_type="widget"
-                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;mf-textarea&quot;}"
-                                                                                                    data-widget_type="mf-textarea.default">
+                                                                                                    data-settings="{&quot;mf_input_name&quot;:&quot;message&quot;}"
+                                                                                                    data-widget_type="message.default">
                                                                                                     <div
                                                                                                         class="elementor-widget-container">
                                                                                                         <div
@@ -2704,8 +2710,9 @@
                                                                                                             <textarea
                                                                                                                 class="mf-input mf-textarea "
                                                                                                                 id="mf-input-text-area-1564c29"
-                                                                                                                name="mf-textarea"
+                                                                                                                name="message"
                                                                                                                 placeholder="Your Comment "
+                                                                                                                required 
                                                                                                                 cols="30"
                                                                                                                 rows="10"
                                                                                                                 aria-invalid="false"></textarea>
@@ -2720,23 +2727,31 @@
                                                                                                         class="elementor-widget-container">
                                                                                                         <div class="mf-btn-wraper "
                                                                                                             data-mf-form-conditional-logic-requirement="">
-                                                                                                            <button
+                                                                                                            <button onclick="sucess()"
                                                                                                                 type="submit"
                                                                                                                 class="metform-btn metform-submit-btn "
                                                                                                                 id=""><span>send
                                                                                                                     message
                                                                                                                 </span></button>
+
                                                                                                         </div>
+                                                                                                        
                                                                                                     </div>
                                                                                                 </div>
+                                                                                               
+                                                                                              
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+                                                                                    
                                                                                 </section>
                                                                             </div>
                                                                         </div>
+                                                                       
+                                                                       
                                                                     </form>
                                                                 </div>
+                                                                
 
 
            
@@ -3103,6 +3118,33 @@
             </div>
         </footer>
     </div><!-- #page -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwwyKFyCauQrvruN9xv1Vtg-GHnXOpU0bh5_n518Kg0kWHd6fcWloziSZ8h5bqktv7Z/exec'
+        const form = document.forms['Contact Us']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      	<script type="text/javascript">
+            function sucess(){
+      
+                if (document.forms['Contact Us'].message.value === "") {
+                    swal("Oops....","Some thing went wrong!","error");
+    return false;
+  }
+  else{
+    swal("Sucess","Message was sent Our team will contact you soon!","success");
+  }
+              
+           }
+           
+       
+       
+       </script>
     <link rel="stylesheet" id="elementor-post-797-css"
         href="https://templatekit.jegtheme.com/travisa/wp-content/uploads/sites/67/elementor/css/post-797.css?ver=1653557144"
         type="text/css" media="all">
@@ -3191,11 +3233,7 @@
     <script type="text/javascript"
         src="https://templatekit.jegtheme.com/travisa/wp-includes/js/dist/element.min.js?ver=fb9def72b4f6427aa79ce1c534a205cc"
         id="wp-element-js"></script>
-    <script type="text/javascript" id="metform-app-js-extra">
-        /* <![CDATA[ */
-        var mf = { "postType": "page", "restURI": "https:\/\/templatekit.jegtheme.com\/travisa\/wp-json\/metform\/v1\/forms\/views\/" };
-/* ]]> */
-    </script>
+    
     <script type="text/javascript"
         src="https://templatekit.jegtheme.com/travisa/wp-content/plugins/metform/public/assets/js/app.js?ver=2.1.6"
         id="metform-app-js"></script>
@@ -3208,11 +3246,7 @@
     <script type="text/javascript"
         src="https://templatekit.jegtheme.com/travisa/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.js?ver=2.6.1"
         id="animate-circle-js"></script>
-    <script type="text/javascript" id="elementskit-elementor-js-extra">
-        /* <![CDATA[ */
-        var ekit_config = { "ajaxurl": "https:\/\/templatekit.jegtheme.com\/travisa\/wp-admin\/admin-ajax.php", "nonce": "eaef3d77ad" };
-/* ]]> */
-    </script>
+
     <script type="text/javascript"
         src="https://templatekit.jegtheme.com/travisa/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.6.1"
         id="elementskit-elementor-js"></script>
@@ -3220,7 +3254,8 @@
         src="https://templatekit.jegtheme.com/travisa/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.6.5"
         id="preloaded-modules-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
 
-
+        <script data-cfasync="false" type="text/javascript"
+        src="form-submission-handler.js"></script>
 
     <!-- Dynamic page generated in 1.279 seconds. -->
     <!-- Cached page generated by WP-Super-Cache on 2022-06-27 14:07:04 -->
