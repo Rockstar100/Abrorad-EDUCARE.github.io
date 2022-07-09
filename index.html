@@ -2143,8 +2143,8 @@
                                                     <div class="elementor-element elementor-element-6628d83 elementor-widget elementor-widget-jkit_mailchimp" data-id="6628d83" data-element_type="widget" data-widget_type="jkit_mailchimp.default">
                                                         <div class="elementor-widget-container">
                                                             <div class="jeg-elementor-kit jkit-mailchimp style-inline jeg_module_6_43_62aeabe77eb03">
-                                                                <form method="post" class="jkit-mailchimp-form" data-listed="" data-success-message="Successfully listed this email" data-error-message="Something went wrong">
-                                                                    <div class="jkit-mailchimp-message"></div>
+                                                                <form method="post" class="jkit-mailchimp-form" name="Subscribe Us"id="Subscribe Us" data-email="naveenjaiswal6422@gmail.com" method="post" action="" >
+                                                                
                                                                     <div class="jkit-form-wrapper email-form">
                                                                         <div class="jkit-mailchimp-email jkit-input-wrapper input-container">
                                                                             <div class="jkit-form-group">
@@ -2154,9 +2154,9 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="jkit-submit-input-holder jkit-input-wrapper">
-                                                                            <button type="submit" class="jkit-mailchimp-submit position-before" name="jkit-mailchimp">
+                                                                            <button type="submit" onclick="Subscribe()" class="jkit-mailchimp-submit position-before" name="jkit-mailchimp">
 																				<i aria-hidden="true"
-																					class="fas fa-chevron-right"></i>
+																					class="fas fa-chevron-right" ></i>
 																			</button>
                                                                         </div>
                                                                     </div>
@@ -2239,7 +2239,21 @@
                 </div>
             </div>
         </footer>
-    </div>
+	</div>
+	
+	<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwE1R4grof7yw7cmOF0WfdrLLRLH93MOaL3nPozv66Jv6wsX-8yMhNGWEShacOOGZVT/exec'
+        const form = document.forms['Subscribe Us']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+			alert("Thankyou for Subscribing.");
+        })
+      </script>
+ 
     <!-- #page -->
     <link rel="stylesheet" id="tiny-slider-css" href="https://templatekit.jegtheme.com/travisa/wp-content/plugins/jeg-elementor-kit/assets/js/tiny-slider/tiny-slider.css?ver=2.9.3" type="text/css" media="all">
     <link rel="stylesheet" id="e-animations-css" href="https://templatekit.jegtheme.com/travisa/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.6.5" type="text/css" media="all">
